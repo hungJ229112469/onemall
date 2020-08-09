@@ -1,10 +1,10 @@
 package cn.iocoder.mall.order.biz.service;
 
-import cn.iocoder.common.framework.constant.DeletedStatusEnum;
+import cn.iocoder.common.framework.enums.DeletedStatusEnum;
 import cn.iocoder.common.framework.util.ServiceExceptionUtil;
 import cn.iocoder.common.framework.vo.CommonResult;
-import cn.iocoder.mall.admin.api.DataDictService;
-import cn.iocoder.mall.admin.api.bo.datadict.DataDictBO;
+import cn.iocoder.mall.system.api.DataDictService;
+import cn.iocoder.mall.system.api.bo.datadict.DataDictBO;
 import cn.iocoder.mall.order.api.OrderLogisticsService;
 import cn.iocoder.mall.order.api.OrderReturnService;
 import cn.iocoder.mall.order.api.bo.OrderLastLogisticsInfoBO;
@@ -49,9 +49,9 @@ public class OrderReturnServiceImpl implements OrderReturnService {
     private OrderItemMapper orderItemMapper;
     @Autowired
     private OrderReturnMapper orderReturnMapper;
-
-    @Reference(validation = "true")
+    @Autowired
     private OrderLogisticsService orderLogisticsService;
+
     @Reference(validation = "true", version = "${dubbo.consumer.PayRefundService.version}")
     private PayRefundService payRefundService;
     @Reference(validation = "true", version = "${dubbo.consumer.DataDictService.version}")

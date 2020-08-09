@@ -1,6 +1,6 @@
 package cn.iocoder.mall.promotion.biz.dataobject;
 
-import cn.iocoder.common.framework.dataobject.BaseDO;
+import cn.iocoder.mall.mybatis.core.dataobject.BaseDO;
 import lombok.Data;
 import lombok.experimental.Accessors;
 
@@ -38,7 +38,7 @@ public class CouponTemplateDO extends BaseDO {
     /**
      * 优惠码状态
      *
-     * {@link cn.iocoder.mall.promotion.api.constant.CouponTemplateStatusEnum}
+     * {@link cn.iocoder.mall.promotion.api.enums.CouponTemplateStatusEnum}
      *
      * 当优惠劵（码）开启中，可以手动操作，设置禁用中。
      */

@@ -1,12 +1,12 @@
 package cn.iocoder.mall.promotion.biz.service;
 
-import cn.iocoder.common.framework.constant.CommonStatusEnum;
-import cn.iocoder.common.framework.constant.DeletedStatusEnum;
+import cn.iocoder.common.framework.enums.CommonStatusEnum;
 import cn.iocoder.common.framework.util.ServiceExceptionUtil;
+import cn.iocoder.mall.mybatis.core.enums.DeletedStatusEnum;
 import cn.iocoder.mall.promotion.api.BannerService;
 import cn.iocoder.mall.promotion.api.bo.BannerBO;
 import cn.iocoder.mall.promotion.api.bo.BannerPageBO;
-import cn.iocoder.mall.promotion.api.constant.PromotionErrorCodeEnum;
+import cn.iocoder.mall.promotion.api.enums.PromotionErrorCodeEnum;
 import cn.iocoder.mall.promotion.api.dto.BannerAddDTO;
 import cn.iocoder.mall.promotion.api.dto.BannerPageDTO;
 import cn.iocoder.mall.promotion.api.dto.BannerUpdateDTO;

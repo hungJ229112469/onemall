@@ -1,6 +1,6 @@
 package cn.iocoder.mall.order.biz.service;
 
-import cn.iocoder.common.framework.constant.DeletedStatusEnum;
+import cn.iocoder.common.framework.enums.DeletedStatusEnum;
 import cn.iocoder.common.framework.util.DateUtil;
 import cn.iocoder.common.framework.util.ServiceExceptionUtil;
 import cn.iocoder.common.framework.vo.CommonResult;
@@ -10,7 +10,6 @@ import cn.iocoder.mall.order.api.bo.OrderLogisticsInfoBO;
 import cn.iocoder.mall.order.api.bo.OrderLogisticsInfoWithOrderBO;
 import cn.iocoder.mall.order.api.constant.OrderErrorCodeEnum;
 import cn.iocoder.mall.order.biz.convert.OrderLogisticsConvert;
-import cn.iocoder.mall.order.biz.convert.OrderLogisticsDetailConvert;
 import cn.iocoder.mall.order.biz.dao.OrderItemMapper;
 import cn.iocoder.mall.order.biz.dao.OrderLogisticsDetailMapper;
 import cn.iocoder.mall.order.biz.dao.OrderLogisticsMapper;

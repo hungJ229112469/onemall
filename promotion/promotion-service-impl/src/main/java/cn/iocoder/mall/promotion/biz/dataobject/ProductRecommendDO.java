@@ -1,7 +1,8 @@
 package cn.iocoder.mall.promotion.biz.dataobject;
 
-import cn.iocoder.common.framework.dataobject.DeletableDO;
-import cn.iocoder.mall.promotion.api.constant.ProductRecommendTypeEnum;
+
+import cn.iocoder.mall.mybatis.core.dataobject.DeletableDO;
+import cn.iocoder.mall.promotion.api.enums.ProductRecommendTypeEnum;
 import lombok.Data;
 import lombok.experimental.Accessors;
 
@@ -34,7 +35,7 @@ public class ProductRecommendDO extends DeletableDO {
     /**
      * 状态
      *
-     * {@link cn.iocoder.common.framework.constant.CommonStatusEnum}
+     * {@link cn.iocoder.common.framework.enums.CommonStatusEnum}
      */
     private Integer status;
     /**

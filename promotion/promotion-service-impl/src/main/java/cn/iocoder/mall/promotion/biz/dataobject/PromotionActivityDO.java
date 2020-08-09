@@ -1,6 +1,6 @@
 package cn.iocoder.mall.promotion.biz.dataobject;
 
-import cn.iocoder.common.framework.dataobject.BaseDO;
+import cn.iocoder.mall.mybatis.core.dataobject.BaseDO;
 import lombok.Data;
 import lombok.experimental.Accessors;
 
@@ -25,7 +25,7 @@ public class PromotionActivityDO extends BaseDO {
     /**
      * 活动类型
      *
-     * 参见 {@link cn.iocoder.mall.promotion.api.constant.PromotionActivityTypeEnum} 枚举
+     * 参见 {@link cn.iocoder.mall.promotion.api.enums.PromotionActivityTypeEnum} 枚举
      */
     private Integer activityType;
 //    /**
@@ -36,7 +36,7 @@ public class PromotionActivityDO extends BaseDO {
     /**
      * 活动状态
      *
-     * 参见 {@link cn.iocoder.mall.promotion.api.constant.PromotionActivityStatusEnum} 枚举
+     * 参见 {@link cn.iocoder.mall.promotion.api.enums.PromotionActivityStatusEnum} 枚举
      */
     private Integer status;
     /**
@@ -165,7 +165,7 @@ public class PromotionActivityDO extends BaseDO {
         /**
          * 可用范围的类型
          *
-         * 参见 {@link cn.iocoder.mall.promotion.api.constant.RangeTypeEnum} 枚举
+         * 参见 {@link cn.iocoder.mall.promotion.api.enums.RangeTypeEnum} 枚举
          * 暂时只用 “所有可用” + “PRODUCT_INCLUDE_PRT”
          */
         private Integer rangeType;
